@@ -11,16 +11,19 @@
 .header h1{
   text-align: center;
   padding-top: 6rem;
+  font-size: var(--fs-h1);
 }
 
 .header h2{
   text-align: center;
+  font-size: var(--fs-h2);
 }
 
 /* === navBar === */
 
 .nav{
   position: fixed;
+  width: 100%;
 }
 
 .nav ul{
@@ -57,7 +60,16 @@
   width: 50%;
 }
 
+.main h2{
+  font-size: var(--fs-h2);
+}
+
 /* === Skills */
+
+.skills h2{
+  font-size: var(--fs-h2);
+}
+
 .logos{
   padding-top: 5rem;
   display: flex;
@@ -70,6 +82,7 @@
 /* === Projects === */
 .projects h2{
   text-align: center;
+  font-size: var(--fs-h2);
 }
 
 .projecstcontainer{
@@ -137,4 +150,6 @@
   .logos{
     margin: 0;
   }
+
+  
 }

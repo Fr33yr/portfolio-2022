@@ -4,17 +4,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 
 import styles from '../styles/Home.module.css'
-import projectImg from '../public/assets/img/app-screenshot.jpg'
-import projectImg2 from '../public/assets/img/app-screenshot1.jpg'
-import htmlLogo from '../public/assets/svg/html.svg'
-import css3Logo from '../public/assets/svg/css3.svg'
-import javascriptLogo from '../public/assets/svg/javascript.svg'
-import typescriptLogo from '../public/assets/svg/typescript.svg'
-import reactLogo from '../public/assets/svg/react.svg'
-import firebaseLogo from '../public/assets/svg/firebase.svg'
-import tailwindLogo from '../public/assets/svg/tailwindcss.svg'
-import sassLogo from '../public/assets/svg/sass.svg'
-import figmaLogo from '../public/assets/svg/figma.svg'
+import Skills from '../components/Skills'
+import Projects from '../components/Projects'
+
 
 export default function Home() {
   return (
@@ -40,69 +32,15 @@ export default function Home() {
 
       <main className={styles.main}>
         <article>
-          <h2>What i do</h2>
-          <p>I love every part of the development, from wireframing with
-            paper and pencil then the ui design and the muckup until writing
-            the code of the application or website</p>
+          <h2>About me</h2>
+          <p>I'm a Frontend developer who loves simple and stylized
+            designs. I am mostly self-taught and whenever
+            I can try to learn new technologies.</p>
         </article>
 
-        <article className={styles.skills}>
-          <h2>Skills</h2>
-          <div className={styles.logos}>
-            <span>
-              <Image src={htmlLogo}
-                alt='Html-logo' width={100} height={100}></Image>
-            </span>
-            <span>
-              <Image src={css3Logo}
-                alt='Css-logo' width={90} height={90}></Image>
-            </span>
-            <span>
-              <Image src={javascriptLogo}
-                alt='Javascript-logo' width={90} height={90}></Image>
-            </span>
-            <span>
-              <Image src={typescriptLogo}
-                alt='Typescript-logo' width={90} height={90}></Image>
-            </span>
-            <span>
-              <Image src={reactLogo}
-                alt='React-logo' width={90} height={90}></Image>
-            </span>
-            <span>
-              <Image src={firebaseLogo}
-                alt='Firebase-logo' width={90} height={90}></Image>
-            </span>
-            <span>
-              <Image src={sassLogo}
-                alt='Sass-logo' width={90} height={90}></Image>
-            </span>
-            <span>
-              <Image src={tailwindLogo}
-                alt='Tailwindcss-logo' width={90} height={90}></Image>
-            </span>
-            <span>
-              <Image src={figmaLogo}
-                alt='Figma-logo' width={90} height={90}></Image>
-            </span>
-          </div>
-        </article>
-
-        <article className={styles.projects}>
-          <h2>Projects</h2>
-          <div className={styles.projecstcontainer}>
-            <div>
-              <Image src={projectImg}
-                alt="Picture of the project"
-                height={200} width={200} />
-            </div>
-            <div>
-              <Image src={projectImg2}
-                alt="Picture of the project"
-                height={200} width={200} />
-            </div>
-          </div>
-        </article>
+        <Skills />
+        <Projects />
+        
       </main>
 
       <footer className={styles.footer}>
