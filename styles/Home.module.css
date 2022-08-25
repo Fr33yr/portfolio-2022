@@ -58,8 +58,13 @@
 }
 
 /* === Skills */
-.skills{
-  
+.logos{
+  padding-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 25vw
 }
 
 /* === Projects === */
@@ -68,6 +73,7 @@
 }
 
 .projecstcontainer{
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
 }
@@ -126,6 +132,9 @@
   .footer p{
     position: unset;
     padding-top: 1.2rem;
+    margin: 0;
+  }
+  .logos{
     margin: 0;
   }
 }
