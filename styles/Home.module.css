@@ -63,8 +63,17 @@
 }
 
 /* === Projects === */
-.projects{
-  
+.projects h2{
+  text-align: center;
+}
+
+.projecstcontainer{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projecstcontainer div{
+  margin: 2rem;
 }
 
 /* === Footer === */

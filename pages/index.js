@@ -4,6 +4,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 
 import styles from '../styles/Home.module.css'
+import projectImg from '../public/assets/img/app-screenshot.jpg'
+import projectImg2 from '../public/assets/img/app-screenshot1.jpg'
+
 
 export default function Home() {
   return (
@@ -40,13 +43,23 @@ export default function Home() {
           <p>I love every part of the development, from wireframing with
             paper and pencil then the ui design and the muckup until writing
             the code of the application or website</p>
+            <object data="../public/assets/svg/react-svg.svg" width="300" height="300"></object>
         </article>
 
         <article className={styles.projects}>
           <h2>Projects</h2>
-          <p>I love every part of the development, from wireframing with
-            paper and pencil then the ui design and the muckup until writing
-            the code of the application or website</p>
+          <div className={styles.projecstcontainer}>
+            <div>
+              <Image src={projectImg}
+                alt="Picture of the project"
+                height={200} width={200} />
+            </div>
+            <div>
+              <Image src={projectImg2}
+                alt="Picture of the project"
+                height={200} width={200} />
+            </div>
+          </div>
         </article>
       </main>
 
