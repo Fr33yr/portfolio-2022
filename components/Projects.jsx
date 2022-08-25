@@ -4,7 +4,8 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import projectImg from '../public/assets/img/app-screenshot.jpg'
 import projectImg2 from '../public/assets/img/app-screenshot1.jpg'
-
+import Card from './Card/Card'
+import { data } from './projects-data'
 
 export default function Projects() {
     return (
@@ -12,16 +13,11 @@ export default function Projects() {
             <article className={styles.projects}>
                 <h2>Projects</h2>
                 <div className={styles.projecstcontainer}>
-                    <div>
-                        <Image src={projectImg}
-                            alt="Picture of the project"
-                            height={200} width={280} />
-                    </div>
-                    <div>
-                        <Image src={projectImg2}
-                            alt="Picture of the project"
-                            height={200} width={280} />
-                    </div>
+                    {
+                        data.map((item, index)=>(
+                            <Card {...item}/>
+                        ))
+                    }
                 </div>
             </article>
         </div>

@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import Head from 'next/head'
-import Image from 'next/image'
 
 import styles from '../styles/Home.module.css'
 import Skills from '../components/Skills'
@@ -40,7 +39,6 @@ export default function Home() {
             designs. I am mostly self-taught and whenever
             I can try to learn new technologies.</p>
         </article>
-
         <Skills />
         <Projects />
         
