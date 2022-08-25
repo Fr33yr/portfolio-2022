@@ -9,6 +9,7 @@ import Projects from '../components/Projects'
 
 
 export default function Home() {
+
   return (
     <div className={styles.container}>
       <Head>
@@ -25,8 +26,10 @@ export default function Home() {
             <li>Projects</li>
           </ul>
         </nav>
-        <h1>Hello there, I am
-          Agustin</h1>
+        <h1>
+          Hello there, I am
+          Agustin
+        </h1>
         <h2>Frontend developer</h2>
       </header>
 

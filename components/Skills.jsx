@@ -18,8 +18,9 @@ export default function Skills() {
             <article className={styles.skills}>
                 <h2>Skills</h2>
                 <div className={styles.logos}>
+                    <span></span>
                     <span>
-                        <Image src={htmlLogo}
+                        <Image src={htmlLogo} 
                             alt='Html-logo' width={100} height={100}></Image>
                     </span>
                     <span>
@@ -40,7 +41,8 @@ export default function Skills() {
                     </span>
                     <span>
                         <Image src={firebaseLogo}
-                            alt='Firebase-logo' width={90} height={90}></Image>
+                            alt='Firebase-logo' width={90} height={90}
+                            ></Image>
                     </span>
                     <span>
                         <Image src={sassLogo}

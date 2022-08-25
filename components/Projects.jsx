@@ -15,12 +15,12 @@ export default function Projects() {
                     <div>
                         <Image src={projectImg}
                             alt="Picture of the project"
-                            height={200} width={200} />
+                            height={200} width={280} />
                     </div>
                     <div>
                         <Image src={projectImg2}
                             alt="Picture of the project"
-                            height={200} width={200} />
+                            height={200} width={280} />
                     </div>
                 </div>
             </article>
