@@ -17,11 +17,12 @@
     max-width: 25px;
     max-height: 25px;
     margin: 0 1rem;
+    transition: 0.5s;
+    color: rgb(0, 89, 216);
 }
 
-.footer a :hover {
-    color: #696868;
-    transition: ease 500ms;
+.footer a:hover {
+    color: white;
 }
 
 .footer p {
