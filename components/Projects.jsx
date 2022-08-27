@@ -2,8 +2,6 @@ import React from 'react'
 import Image from 'next/image'
 
 import styles from '../styles/Home.module.css'
-import projectImg from '../public/assets/img/app-screenshot.jpg'
-import projectImg2 from '../public/assets/img/app-screenshot1.jpg'
 import Card from './Card/Card'
 import { data } from './projects-data'
 

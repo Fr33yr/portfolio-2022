@@ -4,7 +4,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    font-size: var(--fs-body);
+  font-size: var(--fs-body);
 }
 
 :root {
@@ -12,6 +12,9 @@ body {
   --fs-h2: 2.25rem;
   --fs-h3: 1.25rem;
   --fs-body: 1rem;
+  --primary: #212121;
+  --secondary: #484848;
+  --bg-clr: #001220;
 }
 
 a {
@@ -31,6 +34,6 @@ a {
 
   body {
     color: white;
-    background: black;
+    background: var(--bg-clr);
   }
 }
