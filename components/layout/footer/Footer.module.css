@@ -1,0 +1,49 @@
+/* === Footer === */
+
+.footer {
+    display: flex;
+    flex: 1;
+    padding: 2rem 0;
+    border-top: 1px solid #eaeaea;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    max-width: 25px;
+    max-height: 25px;
+    margin: 0 1rem;
+}
+
+.footer a :hover {
+    color: #696868;
+    transition: ease 500ms;
+}
+
+.footer p {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    margin-left: 2rem;
+}
+
+.medialinks {
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer p {
+        position: unset;
+        padding-top: 1.2rem;
+        margin: 0;
+    }
+}

@@ -1,16 +1,16 @@
 import React from 'react'
 import Image from 'next/image'
 
-import styles from '../styles/Home.module.css'
-import htmlLogo from '../public/assets/svg/html.svg'
-import css3Logo from '../public/assets/svg/css3.svg'
-import javascriptLogo from '../public/assets/svg/javascript.svg'
-import typescriptLogo from '../public/assets/svg/typescript.svg'
-import reactLogo from '../public/assets/svg/react.svg'
-import firebaseLogo from '../public/assets/svg/firebase.svg'
-import tailwindLogo from '../public/assets/svg/tailwindcss.svg'
-import sassLogo from '../public/assets/svg/sass.svg'
-import figmaLogo from '../public/assets/svg/figma.svg'
+import styles from './Skills.module.css'
+import htmlLogo from '../../public/assets/svg/html.svg'
+import css3Logo from '../../public/assets/svg/css3.svg'
+import javascriptLogo from '../../public/assets/svg/javascript.svg'
+import typescriptLogo from '../../public/assets/svg/typescript.svg'
+import reactLogo from '../../public/assets/svg/react.svg'
+import firebaseLogo from '../../public/assets/svg/firebase.svg'
+import tailwindLogo from '../../public/assets/svg/tailwindcss.svg'
+import sassLogo from '../../public/assets/svg/sass.svg'
+import figmaLogo from '../../public/assets/svg/figma.svg'
 
 export default function Skills() {
     return (

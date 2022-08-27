@@ -2,46 +2,6 @@
   padding: 0 2rem;
 }
 
-/* === Header === */
-
-.header {
-  min-width: 100%;
-}
-
-.header h1 {
-  text-align: center;
-  padding-top: 6rem;
-  font-size: var(--fs-h1);
-}
-
-.header h2 {
-  text-align: center;
-  font-size: var(--fs-h2);
-}
-
-/* === navBar === */
-
-.nav {
-  position: fixed;
-  width: 100%;
-  z-index: 100;
-  display: flex;
-  flex-direction: row;
-  background-color: #121212;
-  margin-top: -2rem;
-  left: -.1rem;
-}
-
-.nav ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.nav ul li {
-  margin: 0 11vw;
-}
-
 
 /* === Main === */
 
@@ -71,58 +31,6 @@
   font-size: var(--fs-h2);
 }
 
-/* === Skills */
-
-.skills h2 {
-  font-size: var(--fs-h2);
-}
-
-.logos {
-  padding-top: 5rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  margin: 0 25vw
-}
-
-.logos span:nth-child(2):hover {
-  filter: drop-shadow(3px 5px 2px rgba(237, 145, 8, 0.4));
-}
-
-.logos span:nth-child(3):hover {
-  filter: drop-shadow(3px 5px 2px rgba(8, 176, 237, 0.4)); 
-}
-
-.logos span:nth-child(4):hover {
-  filter: drop-shadow(3px 5px 2px rgba(225, 237, 8, 0.4));
-}
-
-.logos span:nth-child(5):hover {
-  filter: drop-shadow(3px 5px 2px rgba(8, 176, 237, 0.4));
-}
-
-.logos span:nth-child(6):hover {
-  filter: drop-shadow(3px 5px 2px rgba(8, 176, 237, 0.4));
-}
-
-.logos span:nth-child(7):hover {
-  filter: drop-shadow(3px 5px 2px rgba(225, 237, 8, 0.4));
-}
-
-.logos span:nth-child(8):hover {
-  filter: drop-shadow(3px 5px 2px rgba(233, 48, 140, 0.4));
-  
-}
-
-.logos span:nth-child(9):hover {
-  filter: drop-shadow(3px 5px 2px rgba(8, 176, 237, 0.4));
-  
-}
-
-.logos span:nth-child(10):hover {
-  filter: drop-shadow(3px 5px 2px rgba(175, 204, 215, 0.4));
-}
 
 /* === Projects === */
 .projects h2 {
@@ -138,46 +46,6 @@
 
 .projecstcontainer div {
   margin: 2rem;
-}
-
-
-
-/* === Footer === */
-
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-  max-width: 25px;
-  max-height: 25px;
-  margin: 0 1rem;
-}
-
-.footer a :hover {
-  color: #696868;
-  transition: ease 500ms;
-}
-
-.footer p {
-  text-align: center;
-  position: absolute;
-  left: 0;
-  margin-left: 2rem;
-}
-
-.medialinks {
-  display: flex;
-  flex-direction: row;
 }
 
 /* === Media queries === */
