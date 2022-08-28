@@ -32,7 +32,7 @@
 .nav ul {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: center;
 }
 
@@ -49,17 +49,21 @@
         display: block;
         position: absolute;
         right: 0;
+        margin: 0.8rem;
     }
 
     .nav{
-        min-height: 8vh;
+        min-height: 6vh;
     }
 
     .nav ul{
-        display: none;
+        display: flex;
         flex-direction: column;
         justify-content: space-around;
+        min-height: 6vh;
+        transform: translate(200%, 0);
         margin: 0 auto;
         text-align: center;
+        transition: 500ms ease;
     }
 }

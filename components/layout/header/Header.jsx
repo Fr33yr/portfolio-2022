@@ -5,6 +5,7 @@ import styles from './Header.module.css'
 export default function Header() {
     const [isNavAvtive, setIsNavActive] = useState(false)
 
+
     const handleToggle = (toggled) => {
         if (toggled) {
             setIsNavActive(true)
@@ -17,18 +18,20 @@ export default function Header() {
         <>
             <header className={styles.header}>
                 <nav className={styles.nav}>
-                    <ul style={isNavAvtive? {minHeight: "100vh", transform: "translate(0px, 0px)", display: "flex"} : {}}>
+                    <ul style={isNavAvtive ? { minHeight: "100vh", transform: "translate(0px, 0px)", display: "flex" } : {}}>
                         <li>Home</li>
                         <li>Skills</li>
                         <li>Projects</li>
-                        <li>Contact me</li>
+                        <li>Contact</li>
                     </ul>
                     <div className={styles.hamburger}>
                         <Hamburger
                             color='#fff'
                             size={24}
                             direction="right"
-                            onToggle={handleToggle} />
+                            onToggle={handleToggle}
+                            rounded={true}
+                            hideOutline={false} />
                     </div>
                 </nav>
                 <h1>
