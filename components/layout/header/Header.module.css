@@ -27,6 +27,7 @@
     margin-top: -2rem;
     left: -.01rem;
     filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+    transition: 400ms linear;
 }
 
 .nav ul {
@@ -40,23 +41,45 @@
     margin: 0 11vw;
 }
 
-.hamburger{
+.hamburger {
     display: none;
 }
 
+/* === Hide Nav === */
+
+.hidenav {
+    position: fixed;
+    top: -86px;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--bg-clr);
+    margin-top: -2rem;
+    left: -.01rem;
+    filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+    transition: 400ms linear;
+}
+
+.hidenav ul{
+    display: none;
+}
+
+/* === Responsive === */
+
 @media only screen and (max-width: 600px) {
-    .hamburger{
+    .hamburger {
         display: block;
         position: absolute;
         right: 0;
         margin: 0.8rem;
     }
 
-    .nav{
+    .nav {
         min-height: 6vh;
     }
 
-    .nav ul{
+    .nav ul {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
