@@ -34,12 +34,18 @@
 .nav ul {
     width: 100%;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: center;
 }
 
 .nav ul li {
     margin: 0 11vw;
+    cursor: pointer;
+    min-width: 80px;
+}
+
+.nav ul li:hover{
+    color: var(--primary);
 }
 
 .hamburger {
@@ -89,5 +95,6 @@
         margin: 0 auto;
         text-align: center;
         transition: 500ms ease;
+        padding: 0;
     }
 }

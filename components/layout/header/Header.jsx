@@ -11,7 +11,7 @@ export default function Header() {
         if (typeof window !== 'undefined') {
             if (window.scrollY > lastScrollY) { // if scroll down hide the navbar
                 setShow(false);
-            } else { // if scroll up show the navbar
+            }else { // if scroll up show the navbar
                 setShow(true);
             }
 
@@ -44,7 +44,7 @@ export default function Header() {
             <header className={styles.header}>
                 <nav className={show ? styles.nav : styles.hidenav}>
                     <ul style={isNavAvtive ? { minHeight: "100vh", transform: "translate(0px, 0px)"} : {}}>
-                        <li>Home</li>
+                        <li>About me</li>
                         <li>Skills</li>
                         <li>Projects</li>
                         <li>Contact</li>
