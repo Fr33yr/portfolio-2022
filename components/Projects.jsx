@@ -12,7 +12,7 @@ export default function Projects() {
                 <div className={styles.projecstcontainer}>
                     {
                         data.map((item, index)=>(
-                            <Card {...item}/>
+                            <Card {...item} key={index}/>
                         ))
                     }
                 </div>

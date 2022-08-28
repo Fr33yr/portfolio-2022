@@ -3,8 +3,9 @@
     max-height: fit-content;
     display: flex;
     flex-direction: row-reverse;
-    background-color: rgba(48, 48, 48, 0.5);
+    background-color: var(--bg-clr);
     border-radius: 2px;
+    filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
 }
 
 .card div{
@@ -19,6 +20,23 @@
 .card h3 {
     font-size: var(--fs-h3);
     margin: .5rem 0;
+}
+
+.card ul{
+    display: flex;
+    flex-flow: row;
+    color: white;
+    max-width: fit-content;
+    padding: 0;
+    margin: .1rem auto .5rem auto;
+}
+
+.card ul li{
+    margin: 0 .2rem;
+    padding: 0 .4rem;
+    background-color: transparent;
+    border: 2px solid rgb(0, 89, 216);
+    border-radius: 10px;
 }
 
 .card div p{

@@ -2,12 +2,19 @@ import React from "react"
 import Image from "next/image";
 import styles from './Card.module.css'
 
-export default function Card({ imgUrl, title, description, repoUrl, deployUrl }) {
+export default function Card({ imgUrl, title, tecnologies, description, repoUrl, deployUrl }) {
 
   return (
     <div className={styles.card}>
       <div>
         <h3>{title}</h3>
+        <ul>
+          {
+            tecnologies.map((item, index) => (
+              <li>{item}</li>
+            ))
+          }
+        </ul>
         <p>{description}</p>
         <a href={repoUrl}>Repo</a>
         {deployUrl? <a href={deployUrl}>Deploy</a> : ""}
