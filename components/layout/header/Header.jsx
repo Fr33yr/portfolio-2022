@@ -3,15 +3,15 @@ import Hamburger from 'hamburger-react'
 import styles from './Header.module.css'
 
 export default function Header() {
-    const [isNavAvtive, setIsNavActive] = useState(false)
     const [show, setShow] = useState(true)
+    const [isOpen, setOpen] = useState(false)
     const [lastScrollY, setLastScrollY] = useState(0)
 
     const controlNavbar = () => {
         if (typeof window !== 'undefined') {
             if (window.scrollY > lastScrollY) { // if scroll down hide the navbar
                 setShow(false);
-            }else { // if scroll up show the navbar
+            } else { // if scroll up show the navbar
                 setShow(true);
             }
 
@@ -33,25 +33,25 @@ export default function Header() {
 
     const handleToggle = (toggled) => {
         if (toggled) {
-            setIsNavActive(true)
-        } else {
-            setIsNavActive(false)
+            setOpen(true)
+        }else {
+            setOpen(false)
         }
     }
 
-    const handleScroll = () =>{
-        
+    const handleScrollToElement = () => {
+        setOpen(false)
     }
 
     return (
         <>
             <header className={styles.header}>
                 <nav className={show ? styles.nav : styles.hidenav}>
-                    <ul style={isNavAvtive ? { minHeight: "100vh", transform: "translate(0px, 0px)"} : {}}>
-                        <li onClick={handleScroll}>About me</li>
-                        <li onClick={handleScroll}>Skills</li>
-                        <li onClick={handleScroll}>Projects</li>
-                        <li onClick={handleScroll}>Contact</li>
+                    <ul style={isOpen ? { minHeight: "100vh", transform: "translate(0px, 0px)" } : {}}>
+                        <li onClick={handleScrollToElement}>About me</li>
+                        <li>Skills</li>
+                        <li>Projects</li>
+                        <li>Contact</li>
                     </ul>
                     <div className={styles.hamburger}>
                         <Hamburger
@@ -59,6 +59,8 @@ export default function Header() {
                             size={24}
                             direction="right"
                             onToggle={handleToggle}
+                            toggled={isOpen}
+                            toggle={()=>setOpen(!isOpen)}
                             rounded={true}
                             hideOutline={false} />
                     </div>
