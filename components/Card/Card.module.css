@@ -40,7 +40,7 @@
 }
 
 .card div p{
-    width: 100%;
+    width: 100% !important;
     text-align: left;
     margin: 0 0 1.5rem 0 !important;
     padding: 0 1rem;
