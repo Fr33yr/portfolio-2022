@@ -1,17 +1,38 @@
 import React from 'react'
 import Image from 'next/image'
 import styles from './Footer.module.css'
+import toast, { Toaster } from 'react-hot-toast'
 
 import githubLogo from '../../../public/assets/svg/github.svg'
 import linkedinLogo from '../../../public/assets/svg/linkedin.svg'
 import twitterLogo from '../../../public/assets/svg/twitter.svg'
+import emailLogo from '../../../public/assets/svg/email.svg'
 
 
 export default function Footer() {
+
+    const copyEmail = (t) => {
+        navigator.clipboard.writeText("cristoboagustin@gmail")
+        toast.dismiss(t.id)
+    }
+
+    const showEmail = () => {
+        toast.custom((t) => (
+            <div className={styles.toast}>
+                cristoboagustin@gmail
+                <button onClick={(t) => copyEmail(t)}>copy</button>
+            </div>
+        ), {
+            duration: 9000,
+        })
+    }
+
     return (
         <>
             <footer className={styles.footer} id="contact">
-
+                <p>
+                    updated 2022
+                </p>
                 <div className={styles.medialinks}>
                     <a
                         href="https://github.com/Fr33yr"
@@ -19,7 +40,7 @@ export default function Footer() {
                         rel="noopener noreferrer"
                     >
                         <Image
-                        src={githubLogo}/>
+                            src={githubLogo} />
                     </a>
                     <a
                         href="https://twitter.com/AgustinCristobo"
@@ -27,7 +48,7 @@ export default function Footer() {
                         rel="noopener noreferrer"
                     >
                         <Image
-                        src={twitterLogo}/>
+                            src={twitterLogo} />
                     </a>
                     <a
                         href="https://www.linkedin.com/in/agustin-cristobo/"
@@ -35,12 +56,16 @@ export default function Footer() {
                         rel="noopener noreferrer"
                     >
                         <Image
-                        src={linkedinLogo}/>
+                            src={linkedinLogo} />
+                    </a>
+                    <Toaster
+                        position='botton-center' />
+                    <a href="mailto:cristoboagustin@gmail.com"
+                        onClick={showEmail}>
+                        <Image
+                            src={emailLogo} />
                     </a>
                 </div>
-                <p>
-                    updated 2022
-                </p>
             </footer>
         </>
     )

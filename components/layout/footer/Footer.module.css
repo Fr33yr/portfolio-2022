@@ -22,7 +22,7 @@
 }
 
 .footer a:hover {
-    box-shadow: 0 0 25px rgb(0, 89, 216);
+    box-shadow: 0 0 25px var(--secondary);
 }
 
 .footer p {
@@ -37,14 +37,36 @@
     flex-direction: row;
 }
 
+.toast{
+    border: 2px solid var(--secondary);
+    background-color: var(--bg-clr);
+    border-radius: 10px;
+    padding: .5rem 1.2rem;
+    color: var(--font-clr);
+    font-size: var(--fs-body);
+    margin-bottom: 6rem;
+}
+
+.toast button{
+    cursor: pointer;
+    margin-left: 1rem;
+    padding: .2rem .5rem;
+    background: var(--secondary);
+    border: none;
+}
+
 @media only screen and (max-width: 600px) {
     .footer {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .footer p {
         position: unset;
         padding-top: 1.2rem;
         margin: 0;
+    }
+
+    .toast{
+        margin-bottom: 8rem;
     }
 }
