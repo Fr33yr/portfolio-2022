@@ -18,7 +18,7 @@ export default function Home() {
       </Head>
       <Header />
       <main className={styles.main}>
-        <article id='about'>
+        <article>
           <h2>About me</h2>
           <p>I'm a Frontend developer who loves simple and stylized
             designs. I am mostly self-taught and whenever

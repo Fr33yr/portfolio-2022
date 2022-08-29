@@ -69,7 +69,7 @@ export default function Header() {
                             hideOutline={false} />
                     </div>
                 </nav>
-                <h1>
+                <h1 id='about'>
                     Hello there, I am
                     Agustin
                 </h1>
