@@ -24,15 +24,15 @@
 
 .card ul{
     display: flex;
-    flex-flow: row;
+    flex-flow: wrap;
     color: white;
-    max-width: min-content;
+    max-width: fit-content;
     padding: 0;
     margin: .1rem auto .5rem auto;
 }
 
 .card ul li{
-    margin: 0 .2rem;
+    margin: .2rem .2rem;
     padding: 0 .4rem;
     background-color: transparent;
     border: 2px solid var(--secondary);
