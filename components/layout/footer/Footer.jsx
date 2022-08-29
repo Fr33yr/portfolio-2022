@@ -12,21 +12,21 @@ export default function Footer() {
 
                 <div className={styles.medialinks}>
                     <a
-                        href=""
+                        href="https://github.com/Fr33yr"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
                         <FontAwesomeIcon icon={faGithub} />
                     </a>
                     <a
-                        href=""
+                        href="https://twitter.com/AgustinCristobo"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
                         <FontAwesomeIcon icon={faTwitter} />
                     </a>
                     <a
-                        href=""
+                        href="https://www.linkedin.com/in/agustin-cristobo/"
                         target="_blank"
                         rel="noopener noreferrer"
                     >

@@ -24,7 +24,7 @@ export default function Card({ imgUrl, title, tecnologies, description, repoUrl,
         </ul>
         <p>{description}</p>
         <a href={repoUrl} target="_blanck">Repo</a>
-        {deployUrl ? <a href={deployUrl}  target="_blank">Deploy</a> : ""}
+        {deployUrl ? <a href={deployUrl}  target="_blanck">Deploy</a> : ""}
       </div>
     </div>
   )
