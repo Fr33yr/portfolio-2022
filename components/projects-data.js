@@ -1,5 +1,5 @@
-import projectImg from '../public/assets/img/app-screenshot.jpg'
-import projectImg2 from '../public/assets/img/app-screenshot1.jpg'
+import projectImg from '../public/assets/img/app-screenshot.png'
+import projectImg2 from '../public/assets/img/app-screenshot1.png'
 
 const data = [
     {
