@@ -15,7 +15,7 @@ import figmaLogo from '../../public/assets/svg/figma.svg'
 export default function Skills() {
     return (
         <>
-            <article className={styles.skills}>
+            <article className={styles.skills} id="skills">
                 <h2>Skills</h2>
                 <div className={styles.logos}>
                     <span></span>

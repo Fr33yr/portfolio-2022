@@ -7,7 +7,7 @@ import { data } from './projects-data'
 export default function Projects() {
     return (
         <div>
-            <article className={styles.projects}>
+            <article className={styles.projects} id="projects">
                 <h2>Projects</h2>
                 <div className={styles.projecstcontainer}>
                     {

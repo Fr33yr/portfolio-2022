@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { useRouter } from 'next/router'
 import Hamburger from 'hamburger-react'
 import styles from './Header.module.css'
 
@@ -6,6 +7,7 @@ export default function Header() {
     const [show, setShow] = useState(true)
     const [isOpen, setOpen] = useState(false)
     const [lastScrollY, setLastScrollY] = useState(0)
+    const router = useRouter()
 
     const controlNavbar = () => {
         if (typeof window !== 'undefined') {
@@ -39,8 +41,10 @@ export default function Header() {
         }
     }
 
-    const handleScrollToElement = () => {
+    const handleScrollToElement = (e) => {
+        const {value} = e.target.attributes.name
         setOpen(false)
+        router.push(`/#${value}`)
     }
 
     return (
@@ -48,10 +52,10 @@ export default function Header() {
             <header className={styles.header}>
                 <nav className={show ? styles.nav : styles.hidenav}>
                     <ul style={isOpen ? { minHeight: "100vh", transform: "translate(0px, 0px)" } : {}}>
-                        <li onClick={handleScrollToElement}>About me</li>
-                        <li>Skills</li>
-                        <li>Projects</li>
-                        <li>Contact</li>
+                        <li name="about" onClick={(e)=>handleScrollToElement(e)}>About me</li>
+                        <li name="skills" onClick={(e)=>handleScrollToElement(e)}>Skills</li>
+                        <li name="projects" onClick={(e)=>handleScrollToElement(e)}>Projects</li>
+                        <li name="contact" onClick={(e)=>handleScrollToElement(e)}>Contact</li>
                     </ul>
                     <div className={styles.hamburger}>
                         <Hamburger

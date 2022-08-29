@@ -6,6 +6,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: var(--fs-body);
   background-image: url("../public/assets/svg/Backgound.svg");
+  scroll-behavior: smooth;
 }
 
 :root {
