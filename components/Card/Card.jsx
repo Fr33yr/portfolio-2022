@@ -7,23 +7,23 @@ export default function Card({ imgUrl, title, tecnologies, description, repoUrl,
   return (
     <div className={styles.card}>
       <div>
+        <Image
+          src={imgUrl}
+          alt="Picture of the project"
+          height={400} width={400} />
+      </div>
+      <div>
         <h3>{title}</h3>
         <ul>
           {
             tecnologies.map((item, index) => (
-              <li>{item}</li>
+              <li key={index}>{item}</li>
             ))
           }
         </ul>
         <p>{description}</p>
         <a href={repoUrl}>Repo</a>
-        {deployUrl? <a href={deployUrl}>Deploy</a> : ""}
-      </div>
-      <div>
-        <Image
-          src={imgUrl}
-          alt="Picture of the project"
-          height={400} width={400} />
+        {deployUrl ? <a href={deployUrl}>Deploy</a> : ""}
       </div>
     </div>
   )

@@ -39,15 +39,19 @@ export default function Header() {
         }
     }
 
+    const handleScroll = () =>{
+        
+    }
+
     return (
         <>
             <header className={styles.header}>
                 <nav className={show ? styles.nav : styles.hidenav}>
                     <ul style={isNavAvtive ? { minHeight: "100vh", transform: "translate(0px, 0px)"} : {}}>
-                        <li>About me</li>
-                        <li>Skills</li>
-                        <li>Projects</li>
-                        <li>Contact</li>
+                        <li onClick={handleScroll}>About me</li>
+                        <li onClick={handleScroll}>Skills</li>
+                        <li onClick={handleScroll}>Projects</li>
+                        <li onClick={handleScroll}>Contact</li>
                     </ul>
                     <div className={styles.hamburger}>
                         <Hamburger

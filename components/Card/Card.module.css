@@ -1,8 +1,9 @@
 .card {
     max-width: 504px;
+    padding: 1rem;
     max-height: fit-content;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     background-color: var(--bg-clr);
     border-radius: 2px;
     filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
@@ -14,7 +15,6 @@
 
 .card div:nth-child(1){
     text-align: center;
-    margin-bottom: 2rem;
 }
 
 .card h3 {
@@ -26,7 +26,7 @@
     display: flex;
     flex-flow: row;
     color: white;
-    max-width: fit-content;
+    max-width: min-content;
     padding: 0;
     margin: .1rem auto .5rem auto;
 }
@@ -42,7 +42,7 @@
 .card div p{
     width: 100%;
     text-align: left;
-    margin: 0 0 2rem 0 !important;
+    margin: 0 0 1.5rem 0 !important;
     padding: 0 1rem;
 }
 
@@ -64,7 +64,8 @@
         max-width: 315px;
         max-height: 650px;
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
+        padding: 1rem;
     }
 
     .card h3 {
@@ -76,6 +77,5 @@
     .card div:nth-child(1){
         margin-top: 0;
         text-align: center;
-        padding: 0 .4rem;
     }
 }
