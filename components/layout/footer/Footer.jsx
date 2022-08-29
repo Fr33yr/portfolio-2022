@@ -14,21 +14,18 @@ export default function Footer() {
                     <a
                         href="https://github.com/Fr33yr"
                         target="_blank"
-                        rel="noopener noreferrer"
                     >
                         <FontAwesomeIcon icon={faGithub} />
                     </a>
                     <a
                         href="https://twitter.com/AgustinCristobo"
                         target="_blank"
-                        rel="noopener noreferrer"
                     >
                         <FontAwesomeIcon icon={faTwitter} />
                     </a>
                     <a
                         href="https://www.linkedin.com/in/agustin-cristobo/"
                         target="_blank"
-                        rel="noopener noreferrer"
                     >
                         <FontAwesomeIcon icon={faLinkedin} />
                     </a>
