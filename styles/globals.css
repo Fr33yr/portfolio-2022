@@ -8,7 +8,7 @@ body {
   background-image: url("../public/assets/svg/Backgound.svg");
   scroll-behavior: smooth;
 }
-
+ 
 :root {
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
