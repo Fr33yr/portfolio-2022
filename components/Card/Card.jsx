@@ -8,6 +8,7 @@ export default function Card({ imgUrl, title, tecnologies, description, repoUrl,
     <div className={styles.card}>
       <div>
         <Image
+          layout="intrinsic"
           src={imgUrl}
           alt="Picture of the project"
           height={400} width={400} />
