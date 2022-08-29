@@ -18,11 +18,11 @@
     max-height: 25px;
     margin: 0 1rem;
     transition: 0.5s;
-    color: var(--font-clr);
+    border-radius: 50%;
 }
 
 .footer a:hover {
-    color: var(--secondary);
+    box-shadow: 0 0 25px rgb(0, 89, 216);
 }
 
 .footer p {

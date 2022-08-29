@@ -1,8 +1,10 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-
+import Image from 'next/image'
 import styles from './Footer.module.css'
+
+import githubLogo from '../../../public/assets/svg/github.svg'
+import linkedinLogo from '../../../public/assets/svg/linkedin.svg'
+import twitterLogo from '../../../public/assets/svg/twitter.svg'
 
 
 export default function Footer() {
@@ -16,21 +18,24 @@ export default function Footer() {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <FontAwesomeIcon icon={faGithub} />
+                        <Image
+                        src={githubLogo}/>
                     </a>
                     <a
                         href="https://twitter.com/AgustinCristobo"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <FontAwesomeIcon icon={faTwitter} />
+                        <Image
+                        src={twitterLogo}/>
                     </a>
                     <a
                         href="https://www.linkedin.com/in/agustin-cristobo/"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <FontAwesomeIcon icon={faLinkedin} />
+                        <Image
+                        src={linkedinLogo}/>
                     </a>
                 </div>
                 <p>
