@@ -61,6 +61,7 @@ export default function Footer() {
                     <Toaster
                         position='botton-center' />
                     <a href="mailto:cristoboagustin@gmail.com"
+                        target="_blank"
                         onClick={showEmail}>
                         <Image
                             src={emailLogo} />
