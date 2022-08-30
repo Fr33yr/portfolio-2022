@@ -40,6 +40,7 @@ export default function Footer() {
                         rel="noopener noreferrer"
                     >
                         <Image
+                            alt='github-logo'
                             src={githubLogo} />
                     </a>
                     <a
@@ -48,6 +49,7 @@ export default function Footer() {
                         rel="noopener noreferrer"
                     >
                         <Image
+                            alt='twitter-logo'
                             src={twitterLogo} />
                     </a>
                     <a
@@ -56,6 +58,7 @@ export default function Footer() {
                         rel="noopener noreferrer"
                     >
                         <Image
+                            alt='linkedin-logo'
                             src={linkedinLogo} />
                     </a>
                     <Toaster
@@ -64,6 +67,7 @@ export default function Footer() {
                         target="_blank"
                         onClick={showEmail}>
                         <Image
+                            alt='email-logo'
                             src={emailLogo} />
                     </a>
                 </div>
