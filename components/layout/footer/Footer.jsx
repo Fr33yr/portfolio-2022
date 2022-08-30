@@ -65,6 +65,7 @@ export default function Footer() {
                         position='botton-center' />
                     <a href="mailto:cristoboagustin@gmail.com"
                         target="_blank"
+                        rel="noopener noreferrer"
                         onClick={showEmail}>
                         <Image
                             alt='email-logo'
