@@ -11,7 +11,7 @@ export default function Card({ imgUrl, title, tecnologies, description, repoUrl,
           layout="intrinsic"
           src={imgUrl}
           alt="Picture of the project"
-          height={400} width={400} />
+          height={400} width={420} />
       </div>
       <div>
         <h3>{title}</h3>

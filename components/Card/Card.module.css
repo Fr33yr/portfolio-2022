@@ -15,8 +15,8 @@
 
 .card div:first-child{
     margin: auto 0;
-    max-width: 170px;
-    max-height: 170px;
+    max-width: 300px;
+    max-height: 150px;
 }
 
 .card div:nth-child(1){
@@ -33,7 +33,7 @@
     flex-flow: wrap;
     color: white;
     max-width: fit-content;
-    padding: 0;
+    padding: 0 .7rem;
     margin: .1rem auto .5rem auto;
 }
 
