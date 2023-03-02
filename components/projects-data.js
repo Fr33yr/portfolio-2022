@@ -25,7 +25,7 @@ const data = [
         description: "This e-commerce consumes an API i made with mongodb and express",
         imgUrl: projectImg3,
         repoUrl: "https://github.com/Fr33yr/e-commerce",
-        deployUrl: "https://rings-store.netlify.app"
+        deployUrl: ""
     },
 ]
 
